@@ -21,7 +21,7 @@ export function fetchItems() {
     return async (dispatch) => {
         dispatch(getItems())
         try {
-            const response = await fetch('http://makeup-api.herokuapp.com/api/v1/products')
+            const response = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json')
             const data = await response.json()
             dispatch(getItemsSuccess(data))
         } catch (error) {
