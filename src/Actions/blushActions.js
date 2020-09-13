@@ -15,13 +15,12 @@ export const getItemsFailure = () => ({
     type: GET_ITEMS_FAILURE,
 })
 
-//Combining all action in an asynchronous thunk
 
-export function fetchItems() {
+export function fetchItemsBlush() {
     return async (dispatch) => {
         dispatch(getItems())
         try {
-            const response = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json')
+            const response = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=blush')
             const data = await response.json()
             console.log(data);
             dispatch(getItemsSuccess(data))
@@ -30,5 +29,3 @@ export function fetchItems() {
         }
     }
 }
-
-
