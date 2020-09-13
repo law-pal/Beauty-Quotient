@@ -23,6 +23,7 @@ export function fetchItems() {
         try {
             const response = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json')
             const data = await response.json()
+            console.log(data);
             dispatch(getItemsSuccess(data))
         } catch (error) {
             dispatch(getItemsFailure())

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {fetchItems} from '../Actions/itemsActions';
 import {connect} from 'react-redux';
+import Item from './Item'
 
 
 class Items extends Component {
@@ -16,7 +17,7 @@ class Items extends Component {
         }else if(this.props.hasErrors) {
             return <p>error can't display items...</p>
         }else {
-        return this.props.items.map(item => <Item key={item.name} cosmetic={item}/>
+        return this.props.items.map((item, name) => <Item key={name} cosmetic={item}/>
            );
         }
     }
