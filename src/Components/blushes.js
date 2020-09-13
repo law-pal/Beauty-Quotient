@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { fetchItemsBlush } from '../Actions/blushActions';
 import {connect} from 'react-redux';
+import Blush from './blush';
+
 
 
 class Blushes extends Component {
@@ -16,14 +18,15 @@ class Blushes extends Component {
         }else if(this.props.hasErrors) {
             return <p>error can't display items...</p>
         }else {
-        return this.props.items.map((item, name) => <Blushes key={name} blush={item}/>
+        return this.props.items.map((item, name) => <Blush key={name} blush={item}/>
            );
         }
     }
 
     render(){
+
         return(
-            <div>{this.renderBlush}</div>
+            <div>{this.renderBlush()}</div>
         );
     }
 }
