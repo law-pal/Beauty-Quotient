@@ -1,20 +1,26 @@
 import React, {Component} from 'react';
 import './App.css';
-// import Items from './Components/Items';
-// import Blushes from './Components/blushes'
-import Navigation from './Components/Navigation'
+import Bronzers from './Components/bronzers';
+import Blushes from './Components/blushes'
+import Navigation from './Components/Navigation';
 
 class App extends Component {
   render(){
     return(
+
+      // <div className='main-container'>
+      //   <Bronzers/>
+      // </div>
       <div className='grid-container'>
          <header>
-            {/* <a>Beauty Quotient</a> */}
+    
          </header>
-         <main>
-         <Navigation/>
-            {/* <Items/>
-            <Blushes/> */}
+         <main className='main'>
+            <div className='content'>
+              <div className='main-content'>
+                  <Navigation/>
+              </div>
+            </div>
          </main>
          <footer>
            All rights reserve

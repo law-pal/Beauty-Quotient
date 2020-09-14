@@ -17,41 +17,41 @@ class Navigation extends Component {
         return(
             <Router>
                 <nav>
-                    <ul>
-                        <li>
+                    <div className='navbar'>
+                        <div>
                         <Link className='navbar-link' to='/'>Home</Link>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                         <Link className='navbar-link' to='/bronzers'>Bronzers</Link>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                         <Link className='navbar-link' to='/blushes'>Blushes</Link>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                         <Link className='navbar-link' to='/eyebrows'>Eyebrows</Link>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                         <Link className='navbar-link' to='/eyeliners'>Eyeliners</Link>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                         <Link className='navbar-link' to='/eyeshadows'>Eyeshadows</Link>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                         <Link className='navbar-link' to='/foundations'>Foundations</Link>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                         <Link className='navbar-link' to='/lipliners'>Lipliners</Link>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                         <Link className='navbar-link' to='/lipsticks'>Lipsticks</Link>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                         <Link className='navbar-link' to='/mascaras'>Mascaras</Link>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                         <Link className='navbar-link' to='/nailpolishes'>Nail polish</Link>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </nav>
                 <Switch>
                 <Route exact path='/' component={Home}/>

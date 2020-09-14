@@ -18,8 +18,8 @@ class Blushes extends Component {
         }else if(this.props.hasErrors) {
             return <p>error can't display items...</p>
         }else {
-        return this.props.items.map((item, name) => <Blush key={name} blush={item}/>
-           );
+        return this.props.items.map((item, name) => <Blush key={name} blush={item}/>)
+           
         }
     }
 
