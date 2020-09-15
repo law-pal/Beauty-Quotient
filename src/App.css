@@ -42,12 +42,6 @@ footer{
     align-items: center;
 }
 
-/* .content{
-    display: flex;
-} 
-.main-content{
-    flex: 3 60rem;
-}  */
 .navbar{
     display: flex;
     justify-content: space-evenly;
@@ -127,8 +121,8 @@ a:hover{
     list-style: none;
 }
  .product img{
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
 }
  .product-price{
     display: flex;
@@ -157,4 +151,25 @@ a:hover{
     cursor: pointer;
 }
 
-
+.home-container{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "a a "
+    "b b"
+    "c c"
+    "d d"
+    "e e";
+    gap: 1rem;
+}
+.home-container img{
+    max-width: 100%;
+    min-height: 100%;
+}
+.home-container img:hover{
+    box-shadow: 20px rgb(129, 128, 128);
+    opacity: 0.8;
+}
