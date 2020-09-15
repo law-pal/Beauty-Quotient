@@ -49,7 +49,19 @@ footer{
     list-style: none;
     font-size: 1rem;
     cursor: pointer;
+    height: 5rem;
+    background-color: pink;
 } 
+ 
+@media screen and (max-width: 780px) {
+    .navbar{
+      font-size: 0.5rem;
+      display: flex;
+      justify-content: space-evenly;
+    }
+}
+
+
 a{
     text-decoration: none;
     color: rgb(24, 22, 22);
@@ -164,6 +176,8 @@ a:hover{
     "d d"
     "e e";
     gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .home-container img{
     max-width: 100%;
@@ -171,4 +185,17 @@ a:hover{
 }
 .home-container img:hover{
     opacity: 0.8;
+}
+.filter{
+    height: 3rem;
+}
+.filter{
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+    border-bottom: 0.1rem #0c0c0c solid;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    
 }
