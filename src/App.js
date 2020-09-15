@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import Bronzers from './Components/bronzers';
-import Blushes from './Components/blushes'
-import Navigation from './Components/Navigation';
+import Navigation from './Components/Home';
 
 class App extends Component {
   render(){
