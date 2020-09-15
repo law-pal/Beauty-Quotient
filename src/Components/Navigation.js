@@ -19,7 +19,7 @@ class Navigation extends Component {
                 <nav>
                     <div className='navbar'>
                         <div>
-                        <Link className='navbar-link' to='/'></Link>
+                        <Link className='navbar-link' to='/'>Home</Link>
                         </div>
                         <div>
                         <Link className='navbar-link' to='/bronzers'>Bronzers</Link>
