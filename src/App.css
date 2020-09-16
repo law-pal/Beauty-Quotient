@@ -47,7 +47,6 @@ footer{
     justify-content: center;
     align-items: center;
 }
-
 .navbar{
     display: flex;
     justify-content: space-evenly;
@@ -66,7 +65,6 @@ footer{
       justify-content: space-evenly;
     }
 }
-
 
 a{
     text-decoration: none;
@@ -147,7 +145,7 @@ a:hover{
 }
  .product-price{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .product-price div,
@@ -198,15 +196,13 @@ a:hover{
 }
 
 /*fix position and space between item*/
-.filter{
+ .filter{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 1rem;
     margin: 1rem;
-    border-bottom: 0.1rem #0c0c0c solid;
     font-size: 1rem;
-    align-self: center;
-    background-color: #f0f0f0;
+    word-spacing: 0.2rem;
 }
 .filter select{
     text-decoration: none;

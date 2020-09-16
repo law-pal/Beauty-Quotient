@@ -29,7 +29,7 @@ filterType = (event) => {
       <div className='grid-container'>
          <header>
             <h1>Beauty Quotient</h1>
-            <Filter
+            <Filter 
             count={this.props.items.length}
             brandName={this.props.brand}
             type={this.props.product_type}

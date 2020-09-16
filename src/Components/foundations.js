@@ -18,7 +18,7 @@ class Foundations extends Component {
         }else if(this.props.hasErrors) {
             return <p>error can't display items...</p>
         }else {
-        return this.props.items.map((item, index) => <Link key={index} to={`/foundations/${item.id}`}><Foundation eyeshadow={item}/></Link>
+        return this.props.items.map((item, index) => <Link key={index} to={`/foundations/${item.id}`}><Foundation foundation={item}/></Link>
            );
         }
     }

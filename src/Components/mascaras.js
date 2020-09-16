@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {fetchItemsMascara} from '../Actions/mascaraActions';
 import {connect} from 'react-redux';
 import Mascara from './mascara';
-
+import {Link} from 'react-router-dom';
 
 class Mascaras extends Component {
 
@@ -17,7 +17,7 @@ class Mascaras extends Component {
         }else if(this.props.hasErrors) {
             return <p>error can't display items...</p>
         }else {
-        return this.props.items.map((item, name) => <Mascara key={name} mascara={item}/>
+            return this.props.items.map((item, index) => <Link key={index} to={`/mascaras/${item.id}`}><Mascara mascara={item}/></Link>
            );
         }
     }

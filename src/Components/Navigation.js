@@ -18,11 +18,9 @@ import EyelinersInfo from './EyelinersInfo';
 import EyeshadowsInfo from './eyeshadowsInfo';
 import FoundationsInfo from './foundationsInfo';
 import LiplinersInfo from './liplinersInfo';
-
-
-
-
-
+import LipsticksInfo from './lipsticksInfo';
+import MascarasInfo from './mascarasInfo';
+import NailpolishesInfo from './nailpolishesInfo';
 
 
 
@@ -84,11 +82,11 @@ class Navigation extends Component {
                     <Route exact path='/lipliners' component={Lipliners}/>     
                     <Route path='/lipliners/' component={LiplinersInfo}/>
                     <Route exact path='/lipsticks' component={Lipsticks}/> 
-                    {/* <Route path='/lipsticks/' component={LipsticksInfo}/> */}
+                    <Route path='/lipsticks/' component={LipsticksInfo}/>
                     <Route exact path='/mascaras' component={Mascaras}/>   
-                    {/* <Route path='/mascaras/' component={MascarasInfo}/> */}
+                    <Route path='/mascaras/' component={MascarasInfo}/>
                     <Route exact path='/nailpolishes' component={Nailpolishes}/> 
-                    {/* <Route path='/nailpolishes/' component={NailpolishesInfo}/>                   */}
+                    <Route path='/nailpolishes/' component={NailpolishesInfo}/>                  
                 </Switch>
             </Router>
         );
