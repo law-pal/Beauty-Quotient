@@ -11,7 +11,7 @@ const Nailpolish = (props) => {
                         <div className='product'>
                             <a href={'#' + props.nailpolish.name}>
                                 <img src={props.nailpolish.image_link}/>
-                                <p>{props.nailpolish.brand}</p>
+                                <p><strong>{props.nailpolish.brand}</strong></p>
                                 <p>{props.nailpolish.name}</p>
                                 {/* remember to display color later */}
                                 {/* {props.nailpolish.product_colors.map((color, hex_value) => <p key={hex_value} colors={color}/>)} */}

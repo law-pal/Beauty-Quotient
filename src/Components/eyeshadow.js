@@ -11,7 +11,7 @@ const Eyeshadow = (props) => {
                         <div className='product'>
                             <a href={'#' + props.eyeshadow.name}>
                                 <img src={props.eyeshadow.image_link}/>
-                                <p>{props.eyeshadow.brand}</p>
+                                <p><strong>{props.eyeshadow.brand}</strong></p>
                                 <p>{props.eyeshadow.name}</p>
                                 {/* remember to display color later */}
                                 {/* {props.eyeshadow.product_colors.map((color, hex_value) => <p key={hex_value} colors={color}/>)} */}

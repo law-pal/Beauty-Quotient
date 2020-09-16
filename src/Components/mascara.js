@@ -11,7 +11,7 @@ const Mascara = (props) => {
                         <div className='product'>
                             <a href={'#' + props.mascara.name}>
                                 <img src={props.mascara.image_link}/>
-                                <p>{props.mascara.brand}</p>
+                                <p><strong>{props.mascara.brand}</strong></p>
                                 <p>{props.mascara.name}</p>
                                 {/* remember to display color later */}
                                 {/* {props.mascara.product_colors.map((color, hex_value) => <p key={hex_value} colors={color}/>)} */}

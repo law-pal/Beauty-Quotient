@@ -28,7 +28,13 @@ header{
     color: #ffffff;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     padding: 0.5rem;
+}
+/* fix position*/
+header h1{
+    /* display: flex;
+    justify-items: start; */
 }
 main{
     grid-area: main;
@@ -86,6 +92,8 @@ a:hover{
     margin: 1rem;
 }
 .product{
+    width: 20rem;
+    height: 25rem;
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -99,6 +107,7 @@ a:hover{
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     text-align: center;
     font-size: 1rem;
+    line-height: 1.2rem;
 }
 
 /* Card styling for items */
@@ -147,7 +156,7 @@ a:hover{
     flex: 1;
 }
 .product-price div{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 .button{
     padding: 1rem;
@@ -158,9 +167,10 @@ a:hover{
     border: 0.1rem;
 }
 .button-primary{
-    border-radius: 10px;
+    border-radius: 1rem;
     background-color: #ffc040;
     cursor: pointer;
+    border: none;
 }
 
 .home-container{
@@ -186,16 +196,18 @@ a:hover{
 .home-container img:hover{
     opacity: 0.8;
 }
-.filter{
-    height: 3rem;
-}
+
+/*fix position and space between item*/
 .filter{
     display: flex;
+    justify-content: space-evenly;
     padding: 1rem;
     margin: 1rem;
     border-bottom: 0.1rem #0c0c0c solid;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.2rem;
-    
+    font-size: 1rem;
+    align-self: center;
+    background-color: #f0f0f0;
+}
+.filter select{
+    text-decoration: none;
 }

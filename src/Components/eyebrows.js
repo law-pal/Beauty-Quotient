@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {fetchItemsEyebrow} from '../Actions/eyebrowActions';
 import {connect} from 'react-redux';
 import Eyebrow from './eyebrow';
+import {Link} from 'react-router-dom'
 
 
 class Eyebrows extends Component {
@@ -17,7 +18,8 @@ class Eyebrows extends Component {
         }else if(this.props.hasErrors) {
             return <p>error can't display items...</p>
         }else {
-        return this.props.items.map((item, name) => <Eyebrow key={name} eyebrow={item}/>
+            return this.props.items.map((item, index) => <Link key={index} to={`/eyebrows/${item.id}`}><Eyebrow eyebrow={item}/>
+            </Link>
            );
         }
     }

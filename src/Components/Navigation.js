@@ -11,6 +11,20 @@ import Lipliners from './lipliners';
 import Lipsticks from './lipsticks';
 import Mascaras from './mascaras';
 import Nailpolishes from './nailpolishes';
+import BlushInfo from './blushInfo';
+import BronzersInfo from './bronzersInfo';
+import EyebrowsInfo from './eyebrowsInfo';
+import EyelinersInfo from './EyelinersInfo';
+import EyeshadowsInfo from './eyeshadowsInfo';
+import FoundationsInfo from './foundationsInfo';
+import LiplinersInfo from './liplinersInfo';
+
+
+
+
+
+
+
 
 class Navigation extends Component {
     render(){
@@ -54,17 +68,27 @@ class Navigation extends Component {
                     </div>
                 </nav>
                 <Switch>
-                <Route exact path='/' component={Home}/>
-                <Route exact path='/bronzers' component={Bronzers}/>
-                <Route path='/blushes' component={Blushes}/>
-                <Route path='/eyebrows' component={Eyebrows}/> 
-                <Route path='/eyeliners' component={Eyeliners}/>
-                <Route path='/eyeshadows' component={Eyeshadows}/> 
-                <Route path='/foundations' component={Foundations}/>     
-                <Route path='/lipliners' component={Lipliners}/> 
-                <Route path='/lipsticks' component={Lipsticks}/>   
-                <Route path='/mascaras' component={Mascaras}/> 
-                <Route path='/nailpolishes' component={Nailpolishes}/>                  
+                    <Route exact path='/' component={Home}/>
+                    <Route exact path='/bronzers' component={Bronzers}/>
+                    <Route path='/bronzers/' component={BronzersInfo}/>
+                    <Route exact path='/blushes' component={Blushes}/>
+                    <Route path='/blushes/' component={BlushInfo}/>
+                    <Route exact path='/eyebrows' component={Eyebrows}/>
+                    <Route path='/eyebrows/' component={EyebrowsInfo}/>
+                    <Route exact path='/eyeliners' component={Eyeliners}/> 
+                    <Route path='/eyeliners/' component={EyelinersInfo}/>
+                    <Route exact path='/eyeshadows' component={Eyeshadows}/>
+                    <Route path='/eyeshadows/' component={EyeshadowsInfo}/>
+                    <Route exact path='/foundations' component={Foundations}/> 
+                    <Route path='/foundations/' component={FoundationsInfo}/>
+                    <Route exact path='/lipliners' component={Lipliners}/>     
+                    <Route path='/lipliners/' component={LiplinersInfo}/>
+                    <Route exact path='/lipsticks' component={Lipsticks}/> 
+                    {/* <Route path='/lipsticks/' component={LipsticksInfo}/> */}
+                    <Route exact path='/mascaras' component={Mascaras}/>   
+                    {/* <Route path='/mascaras/' component={MascarasInfo}/> */}
+                    <Route exact path='/nailpolishes' component={Nailpolishes}/> 
+                    {/* <Route path='/nailpolishes/' component={NailpolishesInfo}/>                   */}
                 </Switch>
             </Router>
         );

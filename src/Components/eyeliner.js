@@ -11,7 +11,7 @@ const Eyeliner = (props) => {
                         <div className='product'>
                             <a href={'#' + props.eyeliner.name}>
                                 <img src={props.eyeliner.image_link}/>
-                                <p>{props.eyeliner.brand}</p>
+                                <p><strong>{props.eyeliner.brand}</strong></p>
                                 <p>{props.eyeliner.name}</p>
                                 {/* remember to display color later */}
                                 {/* {props.eyeliner.product_colors.map((color, hex_value) => <p key={hex_value} colors={color}/>)} */}

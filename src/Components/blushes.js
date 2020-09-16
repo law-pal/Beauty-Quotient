@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { fetchItemsBlush } from '../Actions/blushActions';
-import {connect} from 'react-redux';
 import Blush from './blush';
+import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
 
 
 
@@ -17,8 +18,13 @@ class Blushes extends Component {
             return ''
         }else if(this.props.hasErrors) {
             return <p>error can't display items...</p>
-        }else {
-        return this.props.items.map((item, name) => <Blush key={name} blush={item}/>)
+        }else{ 
+        return this.props.items.map((item, index) => <Link  key={index} to={`/blushes/${item.id}`}><Blush blush={item}/>
+      
+        </Link>)
+        
+        
+       
            
         }
     }

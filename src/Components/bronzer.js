@@ -8,13 +8,13 @@ const Bronzer = (props) => {
            <ul className='products'>
                <li>
                    <div className='product'>
-                       <a href='#'>
+                       <div>
                            <img src={props.bronzer.image_link}/>
-                           <p>{props.bronzer.brand}</p>
+                           <p><strong>{props.bronzer.brand}</strong></p>
                            <p>{props.bronzer.name}</p>
                            {/* remember to display color later */}
                            {/* {props.bronzer.product_colors.map((color, hex_value) => <p key={hex_value} colors={color}/>)} */}
-                       </a>
+                       </div>
                        <div className='product-price'>
                            <div>{formatCurrency(props.bronzer.price)}</div>
                            <button className='button-primary'>Add to Cart</button>

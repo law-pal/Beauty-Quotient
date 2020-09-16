@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {fetchItemsBronzer} from '../Actions/bonzersActions';
 import {connect} from 'react-redux';
 import Bronzer from './bronzer';
+import {Link} from 'react-router-dom';
 
 
 class Bronzers extends Component {
@@ -17,7 +18,8 @@ class Bronzers extends Component {
         }else if(this.props.hasErrors) {
             return <p>error can't display items...</p>
         }else {
-        return this.props.items.map((item, name) => <Bronzer key={name} bronzer={item}/>
+        return this.props.items.map((item, index) => <Link key={index} to={`/bronzers/${item.id}`}><Bronzer bronzer={item}/>
+      </Link>
            );
         }
     }

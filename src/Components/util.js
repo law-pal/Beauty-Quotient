@@ -1,4 +1,4 @@
 
 export default function formatCurrency(price) {
-      return "$" + Number(parseInt(price).toLocaleString()) + " ";
+      return "$" + Number(parseInt(price).toLocaleString()) + "  ";
 }

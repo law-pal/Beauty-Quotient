@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {fetchItemsFoundation} from '../Actions/foundationActions';
 import {connect} from 'react-redux';
 import Foundation from './foundation';
+import {Link} from 'react-router-dom'
 
 
 class Foundations extends Component {
@@ -17,7 +18,7 @@ class Foundations extends Component {
         }else if(this.props.hasErrors) {
             return <p>error can't display items...</p>
         }else {
-        return this.props.items.map((item, name) => <Foundation key={name} foundation={item}/>
+        return this.props.items.map((item, index) => <Link key={index} to={`/foundations/${item.id}`}><Foundation eyeshadow={item}/></Link>
            );
         }
     }

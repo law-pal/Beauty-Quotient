@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 
  class Filter extends Component {
+
    render() {
       return (
          <div className='filter'>
             <div className='filter-result'>{this.props.count} Items</div>
             <div className='filter-brand'>
                Brand{" "}
-               <select value={this.props.brand} onChange={this.props.brand}>
+               <select value={this.props.brand} onChange={this.props.brandName}>
                   <option value=''>All</option>
                   <option value='almay'>almay</option>
                   <option value='alva'>alva</option>

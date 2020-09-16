@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import BlushInfo from './blushInfo';
 import formatCurrency from './util';
 
 const Blush = (props) => {
@@ -9,13 +11,13 @@ const Blush = (props) => {
                 <ul className='products'>
                     <li>
                         <div className='product'>
-                            <a href={'#' + props.blush.name}>
+                            <div>
                                 <img src={props.blush.image_link}/>
-                                <p>{props.blush.brand}</p>
+                                <p><strong>{props.blush.brand}</strong></p>
                                 <p>{props.blush.name}</p>
                                 {/* remember to display color later */}
                                 {/* {props.blush.product_colors.map((color, hex_value) => <p key={hex_value} colors={color}/>)} */}
-                            </a>
+                            </div>
                             <div className='product-price'>
                                 <div>{formatCurrency(props.blush.price)}</div>
                                 <button className='button-primary'>Add To Cart</button>

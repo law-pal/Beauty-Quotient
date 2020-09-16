@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {fetchItemsEyeliner} from '../Actions/eyelinerActions';
 import {connect} from 'react-redux';
 import Eyeliner from './eyeliner';
+import {Link} from 'react-router-dom'
 
 
 class Eyeliners extends Component {
@@ -17,8 +18,9 @@ class Eyeliners extends Component {
         }else if(this.props.hasErrors) {
             return <p>error can't display items...</p>
         }else {
-        return this.props.items.map((item, name) => <Eyeliner key={name} eyeliner={item}/>
-           );
+            return this.props.items.map((item, index) => <Link key={index} to={`/eyeliners/${item.id}`}><Eyeliner eyeliner={item}/>
+            </Link>
+            );
         }
     }
 

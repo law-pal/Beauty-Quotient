@@ -11,7 +11,7 @@ const Foundation = (props) => {
                         <div className='product'>
                             <a href={'#' + props.foundation.name}>
                                 <img src={props.foundation.image_link}/>
-                                <p>{props.foundation.brand}</p>
+                                <p><strong>{props.foundation.brand}</strong></p>
                                 <p>{props.foundation.name}</p>
                                 {/* remember to display color later */}
                                 {/* {props.foundation.product_colors.map((color, hex_value) => <p key={hex_value} colors={color}/>)} */}

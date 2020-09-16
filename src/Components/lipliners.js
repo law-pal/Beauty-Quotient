@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {fetchItemsLipliner} from '../Actions/liplinerActions';
 import {connect} from 'react-redux';
 import Lipliner from './lipliner';
+import {Link} from 'react-router-dom'
 
 
 class Lipliners extends Component {
@@ -17,7 +18,7 @@ class Lipliners extends Component {
         }else if(this.props.hasErrors) {
             return <p>error can't display items...</p>
         }else {
-        return this.props.items.map((item, name) => <Lipliner key={name} lipliner={item}/>
+        return this.props.items.map((item, index) => <Link key={index} to={`/lipliners/${item.id}`}><Lipliner lipliner={item}/></Link>
            );
         }
     }

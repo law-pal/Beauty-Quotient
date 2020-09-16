@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {fetchItemsEyeshadow} from '../Actions/eyeshadowActions';
 import {connect} from 'react-redux';
 import Eyeshadow from './eyeshadow';
-
+import {Link} from 'react-router-dom'
 
 class Eyeshadows extends Component {
 
@@ -17,7 +17,8 @@ class Eyeshadows extends Component {
         }else if(this.props.hasErrors) {
             return <p>error can't display items...</p>
         }else {
-        return this.props.items.map((item, name) => <Eyeshadow key={name} eyeshadow={item}/>
+            return this.props.items.map((item, index) => <Link key={index} to={`/eyeshadows/${item.id}`}><Eyeshadow eyeshadow={item}/>
+            </Link>
            );
         }
     }
