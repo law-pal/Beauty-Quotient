@@ -11,18 +11,22 @@ const id = location.pathname.split('/')[2];
 const nailpolishes = props.items.filter(item => item.id.toString() === id )[0]
   console.log(nailpolishes)
    return(
+      <div className='info-parent'>
+      <h1>{nailpolishes.name}</h1>
       <div className='info'>
-            <h1>{nailpolishes.name}</h1>
-            <ul>
+            <div className='info-img'>
                <img src={nailpolishes.image_link}/>
+            </div>
+            <ul className='info-ul'>
                <li><strong>Brand:</strong>{nailpolishes.brand}</li>            
                <li><strong>Price:</strong>{formatCurrency(nailpolishes.price)}</li>
                <li><strong>Rating:{' '}</strong>{nailpolishes.rating}</li>
                <li><strong>Category:{' '}</strong>{nailpolishes.category}</li>
-               <button>Add to Cart</button>
                <p><strong>Description:{' '}</strong>{nailpolishes.description}</p>
+               <button>Add to Cart</button>
             </ul>
       </div>
+   </div>
    )
 }
 

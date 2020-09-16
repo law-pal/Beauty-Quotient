@@ -11,17 +11,21 @@ const id = location.pathname.split('/')[2];
 const lipsticks = props.items.filter(item => item.id.toString() === id )[0]
   console.log(lipsticks)
    return(
-      <div className='info'>
-            <h1>{lipsticks.name}</h1>
-            <ul>
-               <img src={lipsticks.image_link}/>
-               <li><strong>Brand:</strong>{lipsticks.brand}</li>            
-               <li><strong>Price:</strong>{formatCurrency(lipsticks.price)}</li>
-               <li><strong>Rating:{' '}</strong>{lipsticks.rating}</li>
-               <li><strong>Category:{' '}</strong>{lipsticks.category}</li>
-               <button>Add to Cart</button>
-               <p><strong>Description:{' '}</strong>{lipsticks.description}</p>
-            </ul>
+      <div className='info-parent'>
+         <h1>{lipsticks.name}</h1>
+         <div className='info'>
+               <div className='info-img'>
+                  <img src={lipsticks.image_link}/>
+               </div>
+               <ul className='info-ul'>
+                  <li><strong>Brand:</strong>{lipsticks.brand}</li>            
+                  <li><strong>Price:</strong>{formatCurrency(lipsticks.price)}</li>
+                  <li><strong>Rating:{' '}</strong>{lipsticks.rating}</li>
+                  <li><strong>Category:{' '}</strong>{lipsticks.category}</li>
+                  <p><strong>Description:{' '}</strong>{lipsticks.description}</p>
+                  <button>Add to Cart</button>
+               </ul>
+         </div>
       </div>
    )
 }

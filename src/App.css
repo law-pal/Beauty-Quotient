@@ -240,6 +240,9 @@ a:hover{
       font-size: 0.8rem;
     }
 }
+.info-ul li{
+    line-height: 2rem;
+}
 .info-ul button{
     padding: 15px 32px;
     border-radius: 1rem;

@@ -15,17 +15,13 @@ class Blushes extends Component {
     
     renderBlush = () => {
         if(this.props.loading) {
-            return ''
+            return 'Incoming beauty products loading...'
         }else if(this.props.hasErrors) {
             return <p>error can't display items...</p>
         }else{ 
         return this.props.items.map((item, index) => <Link  key={index} to={`/blushes/${item.id}`}><Blush blush={item}/>
       
-        </Link>)
-        
-        
-       
-           
+        </Link>)      
         }
     }
 

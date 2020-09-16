@@ -11,18 +11,22 @@ const id = location.pathname.split('/')[2];
 const foundations = props.items.filter(item => item.id.toString() === id )[0]
   console.log(foundations)
    return(
+      <div className='info-parent'>
+      <h1>{foundations.name}</h1>
       <div className='info'>
-            <h1>{foundations.name}</h1>
-            <ul>
+            <div className='info-img'>
                <img src={foundations.image_link}/>
+            </div>
+            <ul className='info-ul'>
                <li><strong>Brand:</strong>{foundations.brand}</li>            
                <li><strong>Price:</strong>{formatCurrency(foundations.price)}</li>
                <li><strong>Rating:{' '}</strong>{foundations.rating}</li>
                <li><strong>Category:{' '}</strong>{foundations.category}</li>
-               <button>Add to Cart</button>
                <p><strong>Description:{' '}</strong>{foundations.description}</p>
+               <button>Add to Cart</button>
             </ul>
       </div>
+   </div>
    )
 }
 
