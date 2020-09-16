@@ -9,16 +9,12 @@ const Eyebrow = (props) => {
                 <ul className='products'>
                     <li>
                         <div className='product'>
-                            <a href={'#' + props.eyebrow.name}>
                                 <img src={props.eyebrow.image_link}/>
                                 <p><strong>{props.eyebrow.brand}</strong></p>
                                 <p>{props.eyebrow.name}</p>
-                                {/* remember to display color later */}
-                                {/* {props.eyebrow.product_colors.map((color, hex_value) => <p key={hex_value} colors={color}/>)} */}
-                            </a>
                             <div className='product-price'>
                                 <div>{formatCurrency(props.eyebrow.price)}</div>
-                                <button className='button-primary'>Add To Cart</button>
+                                <button className='button-primary'>SHOP NOW</button>
                             </div>
                          </div>
                     </li>

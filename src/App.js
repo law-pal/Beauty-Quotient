@@ -25,35 +25,36 @@ filterType = (event) => {
 }
   render(){
     return(
-
-      <div className='grid-container'>
-         <header>
-            <h1>Beauty Quotient</h1>
-            <Filter 
-            count={this.props.items.length}
-            brandName={this.props.brand}
-            type={this.props.product_type}
-            filterBrand={this.filterBrand}
-            filterType={this.filterType} 
-            ></Filter>
-        </header>
-        
-         <main className='main'>
-         {/* <Filter
-            count={this.props.items.length}
-            brand={this.props.name}
-            type={this.props.product_type}
-            filterBrand={this.filterBrand}
-            filterType={this.filterType} 
-         ></Filter> */}
-            <div className='main-content'>
-                <Navigation/>
-            </div>
-         </main>
-         <footer>
-           All rights reserve
-         </footer>
-      </div>
+        <div>
+          <div className='grid-container'>
+            <header>
+                <h1>Beauty Quotient</h1>
+                <Filter 
+                count={this.props.items.length}
+                brandName={this.props.brand}
+                type={this.props.product_type}
+                filterBrand={this.filterBrand}
+                filterType={this.filterType} 
+                ></Filter>
+            </header>
+            
+            <main className='main'>
+            {/* <Filter
+                count={this.props.items.length}
+                brand={this.props.name}
+                type={this.props.product_type}
+                filterBrand={this.filterBrand}
+                filterType={this.filterType} 
+            ></Filter> */}
+                <div className='main-content'>
+                    <Navigation/>
+                </div>
+            </main>
+            <footer>
+              All rights reserve
+          </footer>
+          </div>
+        </div>   
     );
   }
 }
