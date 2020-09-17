@@ -8,7 +8,7 @@ html{
 
 body, #root{
     height: 100vh;
-    margin: 0;
+    /* margin: 0; */
 }
 
 body, input, select, textarea{
@@ -17,17 +17,16 @@ body, input, select, textarea{
 .grid-container{
     display: grid;
     grid-template-areas: "header"
-    "main" ;
-    grid-template-rows: 5rem 1fr 6rem;
+    "main" "footer";
+    grid-template-rows: 5rem 1fr 5rem;
     grid-template-columns: 1fr;
 }
 header{
     grid-area: header;
-    background-color: rgb(21, 253, 156);
+    background-color: rgb(25, 27, 26);
     color: #ffffff;
     display: flex;
     align-items: center;
-    justify-content: stretch;
     padding: 0.5rem;
 }
  
@@ -38,31 +37,31 @@ header{
 } */
 main{
     grid-area: main;
+    width: 90%;
+    margin: auto; 
 }
 footer{
-    background-color:  rgb(21, 253, 156);
+    background-color: rgb(25, 27, 26);
     color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 .navbar{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
-    font-size: 1rem;
+    font-size: 1.4rem;
     cursor: pointer;
     height: 5rem;
-    background-color: pink;
 } 
  
 @media screen and (max-width: 780px) {
     .navbar{
       font-size: 0.5rem;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
     }
 }
 
@@ -72,11 +71,11 @@ a{
     cursor: pointer;
 }
 a:hover{
-    color: rgba(219, 1, 219, 0.747);
+    color: rgba(233, 15, 117, 0.747);
 }
 .parent-container{
     display: inline-flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 .products{
@@ -128,7 +127,7 @@ a:hover{
   .product:hover{
     -webkit-transform: scale(1.05, 1.05);
     transform: scale(1.05, 1.05);
-    box-shadow: 20px 20px 50px 15px rgb(248, 196, 204);
+    box-shadow: 20px 20px 50px 15px rgba(233, 15, 117, 0.747);
 }
   .product:hover::after{
     opacity: 1;

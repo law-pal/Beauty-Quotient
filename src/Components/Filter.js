@@ -6,7 +6,7 @@ import {connect} from 'react-redux';
    render() {
       return (
          <div className='filter'>
-            <div className='filter-result'>{this.props.count}<strong>{" "}Items</strong> <strong>Brand</strong></div>
+            {/* <div className='filter-result'>{this.props.count}<strong>{" "}Items</strong> <strong>Brand</strong></div>
             <div className='filter-brand'>
                  
                <select value={this.props.brand} onChange={this.props.brandName}>
@@ -33,7 +33,7 @@ import {connect} from 'react-redux';
                   <option value='Mascara'>Mascara</option>
                   <option value='Nail-Polish'>Nail Polish</option>
                </select>
-            </div>
+            </div> */}
          </div>
       );
    }
