@@ -6,12 +6,7 @@ import formatCurrency from './util';
 
  class Cart extends Component {
 
-   componentDidMount(){
-      this.props.dispatch(removeFromCart())
-   }
-
-   render(dispatch) {
-      console.log(this.props)
+   render() {
       return (
          <div className='cart-main'>
                <h1>Shoping Cart</h1>
@@ -23,12 +18,12 @@ import formatCurrency from './util';
                            {this.props.cartItems ? this.props.cartItems.map((item, index) => (
                                  <li key={index}>
                                     <div>
-                                       {/* <img src={item.image_link} alt={item.name}/> */}
+                                       <img src={item.image_link} alt={item.name}/>
                                     </div>
                                     <div><strong>{item.brand}</strong></div>
                                     <div><strong>{item.name}</strong></div>
-                                    <div>{item.price}</div>
-                                    <button onClick={() => dispatch(removeFromCart(item))}>Remove</button>
+                                    <div>{formatCurrency(item.price)}</div>
+                                    <button onClick={() => this.props.dispatch(removeFromCart(item))}>Remove</button>
                                  </li>
                            )) : ''}
                         </ul>
@@ -38,16 +33,16 @@ import formatCurrency from './util';
                         <div className='total'>
                            <div>
                               <strong>Total:{' '}</strong>
-                              {formatCurrency(this.props.cartItems.reduce((total, item) => total + (item.price * item.count, 0)))}
+                              {formatCurrency(this.props.cartItems.reduce((a, c) => a + (c.price * c.count, 0)))}
                            </div>
-                           <button className='button primary'>Proceed</button>
+                           <button className='button-primary'>Proceed</button>
                         </div>
                   </div>
-                     )}
+                   )} 
           </div>  
       );
    }
-}
+}console.log(formatCurrency())
 
 const mapStateToProps = state => ({
    cartItems: state.cart.cartItems

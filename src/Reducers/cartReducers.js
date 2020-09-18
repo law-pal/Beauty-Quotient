@@ -6,11 +6,16 @@ import { ADD_TO_CART, REMOVE_FROM_CART } from "../Actions/actions";
     export  function cartReducer (state = initialState, action)  {
    switch(action.type) {
       case ADD_TO_CART:
+         console.log(' from add cart')
          let cartItemsCopy = [...state.cartItems, action.payload]
          console.log(cartItemsCopy)
          return {cartItems: cartItemsCopy};
       case REMOVE_FROM_CART:
-         let cartItemsRemove = state.cartItems.slice().filter(item =>  (any) => any.id !== item.id)
+         console.log('remove from cart')
+         let cartItemsRemove = [...state.cartItems]
+         let itemIndex = cartItemsRemove.findIndex((item) => item.id === action.payload.id)
+         let removedItem = cartItemsRemove.splice(itemIndex, 1);
+         console.log(removedItem)
          console.log(action.payload)
          return {cartItems: cartItemsRemove};
          default:
