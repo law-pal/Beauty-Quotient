@@ -1,6 +1,6 @@
 import React from 'react';
 import formatCurrency from './util';
-import {addToCart} from '../Actions/cartActions'
+import Blushe from './images/Blush.jpg'
 
 const Blush = (props) => {
        
