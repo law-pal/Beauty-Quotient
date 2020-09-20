@@ -5,21 +5,19 @@ const Eyeliner = (props) => {
        
     
         return(
-                <div className='parent-container'>
-                <ul className='products'>
-                    <li>
-                        <div className='product'>
-                                <img src={props.eyeliner.image_link}/>
-                                <p><strong>{props.eyeliner.brand}</strong></p>
-                                <p>{props.eyeliner.name}</p>
-                            <div className='product-price'>
-                                <div>{formatCurrency(props.eyeliner.price)}</div>
-                                <button className='button-primary'>Add To Cart</button>
-                            </div>
-                         </div>
-                    </li>
-                </ul>
-             </div>
+            <div className='parent-container'>
+            <div className='products'>
+                <ul className='product'>
+                        <img src={props.eyeliner.image_link}/>
+                        <li><h4>{props.eyeliner.brand}</h4></li>
+                        <li>{props.eyeliner.name}</li>
+                        <div className='btn-price'>
+                        <div><li><strong>{formatCurrency(props.eyeliner.price)}</strong></li></div>
+                        <div>{<i class="fas fa-heart"></i> }</div>
+                        </div>
+                 </ul>
+            </div>
+     </div>
         )
         
 }

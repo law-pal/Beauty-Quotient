@@ -14,7 +14,7 @@ class Eyebrows extends Component {
 
     renderItemEyebrow = () => {
         if(this.props.loading) {
-            return ''
+            return 'Beauty Products Loading...'
         }else if(this.props.hasErrors) {
             return <p>error can't display items...</p>
         }else {

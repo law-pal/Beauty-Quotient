@@ -2,12 +2,12 @@ import React from 'react';
 import formatCurrency from './util';
 import {connect} from 'react-redux';
 import {useLocation} from 'react-router-dom';
+import { addToCart } from '../Actions/cartActions';
 
-const BronzersInfo = (props) => {
-console.log(props.items);
+const BronzersInfo = ({dispatch, items}) => {
 const location = useLocation();
 const id = location.pathname.split('/')[2];
-const bronzer = props.items.filter(item => item.id.toString() === id )[0]
+const bronzer = items.filter(item => item.id.toString() === id )[0]
   console.log(bronzer)
    return(
       <div className='info-parent'>
@@ -22,7 +22,7 @@ const bronzer = props.items.filter(item => item.id.toString() === id )[0]
                   <li><strong>Rating:{' '}</strong>{bronzer.rating}</li>
                   <li><strong>Category:{' '}</strong>{bronzer.category}</li>
                   <p><strong>Description:{' '}</strong>{bronzer.description}</p>
-                  <button>Add to Cart</button>
+                  <button onClick={() => dispatch(addToCart(bronzer))}>Add to Bag</button>
                </ul>
          </div>
       </div>

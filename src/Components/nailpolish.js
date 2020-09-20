@@ -5,21 +5,19 @@ const Nailpolish = (props) => {
        
     
         return(
-                <div className='parent-container'>
-                <ul className='products'>
-                    <li>
-                        <div className='product'>
-                                <img src={props.nailpolish.image_link}/>
-                                <p><strong>{props.nailpolish.brand}</strong></p>
-                                <p>{props.nailpolish.name}</p>
-                            <div className='product-price'>
-                                <div>{formatCurrency(props.nailpolish.price)}</div>
-                                <button className='button-primary'>Add To Cart</button>
-                            </div>
-                         </div>
-                    </li>
-                </ul>
-             </div>
+            <div className='parent-container'>
+            <div className='products'>
+                <ul className='product'>
+                        <img src={props.nailpolish.image_link}/>
+                        <li><h4>{props.nailpolish.brand}</h4></li>
+                        <li>{props.nailpolish.name}</li>
+                        <div className='btn-price'>
+                        <div><li><strong>{formatCurrency(props.nailpolish.price)}</strong></li></div>
+                        <div>{<i class="fas fa-heart"></i> }</div>
+                        </div>
+                 </ul>
+            </div>
+     </div>
         )
         
 }

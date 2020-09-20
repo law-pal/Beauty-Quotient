@@ -5,21 +5,19 @@ const Eyebrow = (props) => {
        
     
         return(
-                <div className='parent-container'>
-                <ul className='products'>
-                    <li>
-                        <div className='product'>
-                                <img src={props.eyebrow.image_link}/>
-                                <p><strong>{props.eyebrow.brand}</strong></p>
-                                <p>{props.eyebrow.name}</p>
-                            <div className='product-price'>
-                                <div>{formatCurrency(props.eyebrow.price)}</div>
-                                <button className='button-primary'>SHOP NOW</button>
-                            </div>
-                         </div>
-                    </li>
-                </ul>
-             </div>
+            <div className='parent-container'>
+            <div className='products'>
+                <ul className='product'>
+                        <img src={props.eyebrow.image_link}/>
+                        <li><h4>{props.eyebrow.brand}</h4></li>
+                        <li>{props.eyebrow.name}</li>
+                        <div className='btn-price'>
+                        <div><li><strong>{formatCurrency(props.eyebrow.price)}</strong></li></div>
+                        <div>{<i class="fas fa-heart"></i> }</div>
+                        </div>
+                 </ul>
+            </div>
+     </div>
         )
         
 }

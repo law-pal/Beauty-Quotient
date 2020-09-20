@@ -5,21 +5,19 @@ const Foundation = (props) => {
        
     
         return(
-                <div className='parent-container'>
-                <ul className='products'>
-                    <li>
-                        <div className='product'>
-                                <img src={props.foundation.image_link}/>
-                                <p><strong>{props.foundation.brand}</strong></p>
-                                <p>{props.foundation.name}</p>
-                            <div className='product-price'>
-                                <div>{formatCurrency(props.foundation.price)}</div>
-                                <button className='button-primary'>Add To Cart</button>
-                            </div>
-                         </div>
-                    </li>
-                </ul>
-             </div>
+            <div className='parent-container'>
+            <div className='products'>
+                <ul className='product'>
+                        <img src={props.foundation.image_link}/>
+                        <li><h4>{props.foundation.brand}</h4></li>
+                        <li>{props.foundation.name}</li>
+                        <div className='btn-price'>
+                        <div><li><strong>{formatCurrency(props.foundation.price)}</strong></li></div>
+                        <div>{<i class="fas fa-heart"></i> }</div>
+                        </div>
+                 </ul>
+            </div>
+     </div>
         );
         
 }

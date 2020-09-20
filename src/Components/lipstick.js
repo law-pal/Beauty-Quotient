@@ -5,21 +5,19 @@ const Lipstick = (props) => {
        
     
         return(
-                <div className='parent-container'>
-                <ul className='products'>
-                    <li>
-                        <div className='product'>
-                                <img src={props.lipstick.image_link}/>
-                                <p><strong>{props.lipstick.brand}</strong></p>
-                                <p>{props.lipstick.name}</p>
-                            <div className='product-price'>
-                                <div>{formatCurrency(props.lipstick.price)}</div>
-                                <button className='button-primary'>Add To Cart</button>
-                            </div>
-                         </div>
-                    </li>
-                </ul>
-             </div>
+            <div className='parent-container'>
+            <div className='products'>
+                <ul className='product'>
+                        <img src={props.lipstick.image_link}/>
+                        <li><h4>{props.lipstick.brand}</h4></li>
+                        <li>{props.lipstick.name}</li>
+                        <div className='btn-price'>
+                        <div><li><strong>{formatCurrency(props.lipstick.price)}</strong></li></div>
+                        <div>{<i class="fas fa-heart"></i> }</div>
+                        </div>
+                 </ul>
+            </div>
+     </div>
         )
         
 }

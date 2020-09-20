@@ -2,14 +2,13 @@ import React from 'react';
 import formatCurrency from './util';
 import {connect} from 'react-redux';
 import {useLocation} from 'react-router-dom';
+import { addToCart } from '../Actions/cartActions';
 
-
-const FoundationsInfo = (props) => {
-console.log(props.items);
+const FoundationsInfo = ({dispatch, items}) => {
 const location = useLocation();
 const id = location.pathname.split('/')[2];
-const foundations = props.items.filter(item => item.id.toString() === id )[0]
-  console.log(foundations)
+const foundations = items.filter(item => item.id.toString() === id )[0]
+  
    return(
       <div className='info-parent'>
       <h1>{foundations.name}</h1>
@@ -23,7 +22,7 @@ const foundations = props.items.filter(item => item.id.toString() === id )[0]
                <li><strong>Rating:{' '}</strong>{foundations.rating}</li>
                <li><strong>Category:{' '}</strong>{foundations.category}</li>
                <p><strong>Description:{' '}</strong>{foundations.description}</p>
-               <button>Add to Cart</button>
+               <button onClick={() => dispatch(addToCart(foundations))}>Add to Bag</button>
             </ul>
       </div>
    </div>

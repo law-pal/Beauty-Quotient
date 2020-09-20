@@ -15,7 +15,7 @@ class Blushes extends Component {
     
     renderBlush = () => {
         if(this.props.loading) {
-            return 'beauty products loading...'
+            return 'Beauty Products Loading...'
         }else if(this.props.hasErrors) {
             return <p>error can't display items...</p>
         }else{ 

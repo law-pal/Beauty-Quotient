@@ -23,7 +23,7 @@ const blush = items.filter(item => item.id.toString() === id )[0]
                   <li><strong>Rating:{' '}</strong>{blush.rating}</li>
                   <li><strong>Category:{' '}</strong>{blush.category}</li>
                   <p><strong>Description:{' '}</strong>{blush.description}</p>
-                  <button onClick={() => dispatch(addToCart(blush))}>Add to Cart</button>
+                  <button onClick={() => dispatch(addToCart(blush))}>Add to Bag</button>
                </ul>
          </div>
       </div>

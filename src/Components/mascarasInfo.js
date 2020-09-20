@@ -2,14 +2,13 @@ import React from 'react';
 import formatCurrency from './util';
 import {connect} from 'react-redux';
 import {useLocation} from 'react-router-dom';
+import { addToCart } from '../Actions/cartActions';
 
-
-const MascarasInfo = (props) => {
-console.log(props.items);
+const MascarasInfo = ({dispatch, items}) => {
 const location = useLocation();
 const id = location.pathname.split('/')[2];
-const mascaras = props.items.filter(item => item.id.toString() === id )[0]
-  console.log(mascaras)
+const mascaras = items.filter(item => item.id.toString() === id )[0]
+  
    return(
       <div className='info-parent'>
          <h1>{mascaras.name}</h1>
@@ -23,7 +22,7 @@ const mascaras = props.items.filter(item => item.id.toString() === id )[0]
                   <li><strong>Rating:{' '}</strong>{mascaras.rating}</li>
                   <li><strong>Category:{' '}</strong>{mascaras.category}</li>
                   <p><strong>Description:{' '}</strong>{mascaras.description}</p>
-                  <button>Add to Cart</button>
+                  <button onClick={() => dispatch(addToCart(mascaras))}>Add to Bag</button>
                </ul>
          </div>
       </div>

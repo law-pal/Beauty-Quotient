@@ -2,14 +2,13 @@ import React from 'react';
 import formatCurrency from './util';
 import {connect} from 'react-redux';
 import {useLocation} from 'react-router-dom';
+import { addToCart } from '../Actions/cartActions';
 
-
-const NailpolishesInfo = (props) => {
-console.log(props.items);
+const NailpolishesInfo = ({dispatch, items}) => {
 const location = useLocation();
 const id = location.pathname.split('/')[2];
-const nailpolishes = props.items.filter(item => item.id.toString() === id )[0]
-  console.log(nailpolishes)
+const nailpolishes = items.filter(item => item.id.toString() === id )[0]
+  
    return(
       <div className='info-parent'>
       <h1>{nailpolishes.name}</h1>
@@ -23,7 +22,7 @@ const nailpolishes = props.items.filter(item => item.id.toString() === id )[0]
                <li><strong>Rating:{' '}</strong>{nailpolishes.rating}</li>
                <li><strong>Category:{' '}</strong>{nailpolishes.category}</li>
                <p><strong>Description:{' '}</strong>{nailpolishes.description}</p>
-               <button>Add to Cart</button>
+               <button onClick={() => dispatch(addToCart(nailpolishes))}>Add to Bag</button>
             </ul>
       </div>
    </div>
