@@ -55,7 +55,7 @@ import Dropdown from './Dropdown';
               onClick={closeMobileMenu}
             >
                               
-               <span color='white'>
+               <span>
                   <i class="fas fa-shopping-bag"></i>
                </span>
              

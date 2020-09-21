@@ -11,12 +11,12 @@ import Bag from './Icons/shopping-bag-solid.svg';
       console.log(this.props.cartItems)
       return (
             <div className='cart-main'>
+                <div>
                   <h1>Shopping Bag</h1>
-                  <div>
                   <img src={Bag} alt='#' width='30'/>
                      {this.props.cartItems.length === 0 ? <div>Bag is Empty</div> : <div>You have {this.props.cartItems.length} items in your bag {' '}</div>}
                   </div>
-                     <div>
+                  <div className='items-wrapper'>
                         <ul className='cart-items'>
                               {this.props.cartItems ? this.props.cartItems.map((item, index) => (
                                     <li key={index}>
@@ -30,18 +30,18 @@ import Bag from './Icons/shopping-bag-solid.svg';
                                     </li>
                               )) : ''}
                            </ul>
-                     </div>
                         {this.props.cartItems.length !== 0 && (
                      <div>
-                           <div className='total'>
+                           <div>
                               <div>
                                  <strong>Total:{' '}</strong>
-                                 {formatCurrency(this.props.cartItems.reduce((a, c) => a + (c.price * c.count, 0)))}
+                                 {formatCurrency(this.props.cartItems.reduce((total, c) => total + (c.price * c.count, 0)))}
                               </div>
-                              <button className='button-primary'>Proceed</button>
+                              <button className='proceed'>Proceed</button>
                            </div>
                      </div>
                      )} 
+                  </div>
                </div>
       );
    }
