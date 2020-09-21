@@ -165,11 +165,40 @@ a{
 } 
 
 .home img:hover{
-    filter: brightness(-1%);
-    transition: filter 1.5s ease-out
+    filter: brightness(20%);
+    transition: filter 1s ease-out;
 }
 
-/*fix position and space between item*/
+.content-wrapper{
+   position: relative;
+    
+}
+
+.text-wrapper{
+    
+    position: relative;
+    margin-top: -60%;
+}
+
+.text-wrapper h2{
+    visibility: hidden;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.6rem;
+    opacity: 0;
+}
+
+.content-wrapper:hover .text-wrapper h2{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+    
+    
+    
+    /*fix position and space between item*/
  /* .filter{
     display: flex;
     justify-content: space-around;

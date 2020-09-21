@@ -21,9 +21,20 @@ class Home extends Component {
                 <div><img src={Eyeshadow}/></div> */}
                                     
                
-                <div className='span-12'><img src={Lipliner}/> </div>
-                <div className='span-6'><img src={Blush}/> </div>
-                <div className='span-2'><img src={Eyeshadow}/> </div>
+                <div className='context-wrapper'>
+                    <img src={Lipliner} text='Hello'/>
+                    <div className='text-wrapper'>
+                        <h2>Welcome to</h2>
+                    </div>
+                </div>
+                <div className='home-two'>
+                    <img src={Blush}/>
+                    <h2><span>Beauty</span></h2>
+                 </div>
+                <div className='home-two'>
+                    <img src={Eyeshadow}/>
+                   <h2> <span>Quotient</span></h2>
+                 </div>
             </div>
             
         );
