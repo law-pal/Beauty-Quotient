@@ -45,7 +45,7 @@ export const MenuItems = [
       cName: 'dropdown-link'
    },
    {
-      title: 'Polish',
+      title: 'Nail Polish',
       path:'/nailpolishes',
       cName: 'dropdown-link'
    }
