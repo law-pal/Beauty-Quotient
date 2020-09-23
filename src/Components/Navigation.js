@@ -93,7 +93,9 @@ import Dropdown from './Dropdown';
             </Link>
           </li>
         </ul>
-        <Button />
+        <Link>
+          <Button />
+        </Link>
       </nav>
     </>
   );

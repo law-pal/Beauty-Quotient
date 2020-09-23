@@ -25,6 +25,7 @@ import LipsticksInfo from './Components/lipsticksInfo';
 import MascarasInfo from './Components/mascarasInfo';
 import NailpolishesInfo from './Components/nailpolishesInfo';
 import Cart from './Components/Cart';
+import SignUp from './Components/SignUp';
 
 
 
@@ -59,7 +60,8 @@ import Cart from './Components/Cart';
             <Route exact path='/mascaras' component={Mascaras}/>   
             <Route path='/mascaras/' component={MascarasInfo}/>
             <Route exact path='/nailpolishes' component={Nailpolishes}/> 
-            <Route path='/nailpolishes/' component={NailpolishesInfo}/>                  
+            <Route path='/nailpolishes/' component={NailpolishesInfo}/> 
+            <Route path='/SignUp/' component={SignUp}/>                  
         </Switch>
           </main>
           <footer className='footer'>All Rights Reserved</footer>
