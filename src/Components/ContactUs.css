@@ -1,0 +1,57 @@
+.contact-us-container{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-areas: 
+   "a a a";
+   gap: 1rem;
+   height: 250px;
+}
+
+.contact-div{
+   background-color: #333333;
+   color: #ffffff;
+   border-radius: 4px;
+   cursor: pointer;
+   margin: 10px;
+   display: flex;
+   justify-content: center;
+   padding-right: 40px;
+}
+
+.contact-div ul{
+   align-self: center;
+   line-height: 45px;
+}
+
+.contact-div:hover{
+   transition: all 0.2s ease-in-out;
+   border-radius: 4px;
+   border: 5px solid  var(--primary);
+   box-shadow: 0px 0px 25px 5px rgba(233, 15, 117, 0.747);
+}
+
+.contact-div a{
+   color: #ffff;
+}
+
+.contact-div a:hover{
+   color: var(--primary);
+}
+
+.contact-us-i{
+   padding-top: 50px;
+   display: flex;
+   justify-content: space-around;
+   font-size: 35px;
+}
+
+.contact-us-i i:hover{
+   color: rgba(233, 15, 117, 0.747);;
+}
+
+@media screen and (max-width: 960px){
+      .contact-us-container{
+         display: flex;
+         flex-direction: column;
+      }
+}

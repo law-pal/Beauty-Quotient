@@ -174,25 +174,6 @@ a{
     
 }
 
-/*fix position and space between item*/
- /* .filter{
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem;
-    margin: 1rem;
-    font-size: 1rem;
-    word-spacing: 0.2rem;
-}
-
-@media screen and (max-width: 780px) {
-    .filter{
-      font-size: 0.8rem;
-      display: none;
-    }
-}
-.filter select{
-    text-decoration: none; */
-
 /* Info component styling*/    
 
 .info-parent{

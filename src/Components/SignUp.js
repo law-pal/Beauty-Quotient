@@ -47,7 +47,7 @@ import './SignUp.css'
             },
             body: JSON.stringify(item),
          });
-         this.props.history.push('/user');
+         this.props.history.push('/');
       }
 
 

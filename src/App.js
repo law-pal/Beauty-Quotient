@@ -26,6 +26,7 @@ import MascarasInfo from './Components/mascarasInfo';
 import NailpolishesInfo from './Components/nailpolishesInfo';
 import Cart from './Components/Cart';
 import SignUp from './Components/SignUp';
+import ContactUs from './Components/ContactUs';
 
 
 
@@ -61,7 +62,8 @@ import SignUp from './Components/SignUp';
             <Route path='/mascaras/' component={MascarasInfo}/>
             <Route exact path='/nailpolishes' component={Nailpolishes}/> 
             <Route path='/nailpolishes/' component={NailpolishesInfo}/> 
-            <Route path='/SignUp/' component={SignUp}/>                  
+            <Route path='/SignUp/' component={SignUp}/>  
+            <Route path='/ContactUs/' component={ContactUs}/>                  
         </Switch>
           </main>
           <footer className='footer'>All Rights Reserved</footer>
