@@ -2,7 +2,7 @@
   "name": "beauty-quotient",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://law-pal.github.io/beauty-quotient",
+  "homepage": "http://law-pal.github.io/Beauty-Quotient",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -24,7 +24,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "proxy": "http://localhost:8080",
+  "proxy": "http://heroku-beauty-quotient.herokuapp.com/beauty_api/v1/users",
   "eslintConfig": {
     "extends": "react-app"
   },

@@ -40,8 +40,8 @@ import ContactUs from './Components/ContactUs';
           </header>
           <main className='main'>
           <Switch>
-            <Route exact path='/Cart' component={Cart}/>
             <Route exact path='/' component={Home}/>
+            <Route exact path='/Cart' component={Cart}/>
             <Route exact path='/bronzers' component={Bronzers}/>
             <Route path='/bronzers/' component={BronzersInfo}/>
             <Route exact path='/blushes' component={Blushes}/>

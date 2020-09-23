@@ -5,14 +5,17 @@ import './SignUp.css'
  class SignUp extends Component {
          
       emptyUser ={
-         firstaName: '',
+         firstName: '',
          lastName: '',
          email: ''
       }
       constructor(props){
          super(props)
          this.state = {
-            user: this.emptyUser
+            user: this.emptyUser,
+            firstName: '',
+            lastName: '',
+            email: ''
          }
       
       this.handleChange = this.handleChange.bind(this);
@@ -21,25 +24,26 @@ import './SignUp.css'
 
       async componentDidMount(){
          if(this.props.match.params.id !== 'new'){
-            const users = await (await fetch(`beauty_api/v1/user${this.props.match.params.id}`)).json(); 
+            const users = await (await fetch(`http://heroku-beauty-quotient.herokuapp.com/beauty_api/v1/user${this.props.match.params.id}`)).json(); 
             this.setState({user: users});
          }
       }
 
       handleChange(event) {
-         const target = event.target;
-         const value = target.value;
-         const name= target.name;
-         let item = {...this.state.item};
-         item[name] = value;
-         this.setState({item});
+         const {name, value} = event.target;
+         this.setState({[name]: value});
       }
 
       async handleSubmit(event) {
          event.preventDefault();
-         const{item} = this.state;
-
-         await fetch('beauty_api/v1/user', {
+         const {firstName, lastName, email} = this.state;
+         let item = {
+            firstName,
+            lastName,
+            email
+         }
+         console.log(item)
+         await fetch('http://heroku-beauty-quotient.herokuapp.com/beauty_api/v1/user', {
             method: (item.id) ? 'PUT' : 'POST', 
             headers: {
                'Accept': 'application/json',
@@ -59,9 +63,9 @@ import './SignUp.css'
          {title}
             <div className='form-container'>
                <form className='form' onSubmit={this.handleSubmit}>
-                  <input placeholder='firstname' type='text' onChange={this.handleChange} autoComplete='name'/>
-                  <input placeholder='lastname' type='text' onChange={this.handleChange} autoComplete='lastname'/>
-                  <input placeholder='email' type='text' onChange={this.handleChange} autoComplete='email'/>
+                  <input placeholder='firstname' type='text' name='firstName' onChange={this.handleChange} value={this.state.firstName} autoComplete='name'/>
+                  <input placeholder='lastname' type='text' name='lastName' onChange={this.handleChange} value={this.state.lastName} autoComplete='lastname'/>
+                  <input placeholder='email' type='text' name='email' onChange={this.handleChange} value={this.state.email} autoComplete='email'/>
                   <div><button onClick={this.handleSubmit}className='submit-button' type='submit'>Submit</button></div>
                </form>
             </div>

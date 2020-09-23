@@ -27,11 +27,11 @@ class Home extends Component {
                 </div>
                 <div className='home-two'>
                     <img src={Blush}/>
-                    <h2><span>Beauty</span></h2>
+                    <h2>Beauty</h2>
                  </div>
                 <div className='home-two'>
                     <img src={Eyeshadow}/>
-                   <h2> <span>Quotient</span></h2>
+                   <h2>Quotient</h2>
                  </div>
             </div>
             
