@@ -2,7 +2,7 @@
   "name": "beauty-quotient",
   "version": "0.1.0",
   "private": true,
-  "homepage":"http://law-pal.github.io/deploy-react",
+  "homepage": "http://law-pal.github.io/beauty-quotient",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -21,10 +21,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "proxy" : "http://localhost:8080",
+  "proxy": "http://localhost:8080",
   "eslintConfig": {
     "extends": "react-app"
   },
