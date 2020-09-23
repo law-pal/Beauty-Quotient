@@ -1,3 +1,21 @@
+This project is my first full-stack application here is the deploy link => https://law-pal.github.io/Beauty-Quotient/
+
+I started this project by planning the page layout, I decided to go with a grid container for all my content is a very simple layout "header", "main", "footer"
+from there I designed a UI friendly navigation bar to make the user navigate thru the site easy and able to find things quick, is a navigation component with four links home, shopping bag , products (where I created a dropdown menu), contact us page and sign up form, I utilized Redux to managed the state and connect to the store to pass props to the components where I needed data, Fetching utilizing async functions and utilizing 3rd party API, Also using React-Router to handle all my routes and connecting to my backend when the user sign up for the page performing 'PUT', 'POST methods.
+I realize there's a lot of work to do when bulding a fullstack application if you try to implement something you have to take in consideration other things a lot of thing I didn't know I messed up but  I was able to fix them I definetly have few things to add and continue to work on especially on mobile mode making sure thing display correctly, overall it's been a fun expierence from here the sky is the limit buildind applications. 
+Briefly for the backend part of this project I use spring boot app and postgreSQL for mt database fully CRUD functionality both React is conncted to the datebase.
+Thanks.
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
