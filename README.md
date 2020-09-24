@@ -1,4 +1,9 @@
-This project is my first full-stack application here is the deploy link => https://law-pal.github.io/Beauty-Quotient/
+#This project is my first full-stack application here is the deploy link => https://law-pal.github.io/Beauty-Quotient/
+
+
+#Links of my backend deploy in heroku => http://heroku-beauty-quotient.herokuapp.com/beauty_api/v1/users
+
+
 
 I started this project by planning the page layout, I decided to go with a grid container for all my content is a very simple layout "header", "main", "footer"
 from there I designed a UI friendly navigation bar to make the user navigate thru the site easy and able to find things quick, is a navigation component with four links home, shopping bag , products (where I created a dropdown menu), contact us page and sign up form, I utilized Redux to managed the state and connect to the store to pass props to the components where I needed data, Fetching utilizing async functions and utilizing 3rd party API, Also using React-Router to handle all my routes and connecting to my backend when the user sign up for the page performing 'PUT', 'POST methods.
