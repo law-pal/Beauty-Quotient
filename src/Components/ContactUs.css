@@ -51,13 +51,33 @@
 
 @media screen and (max-width: 960px){
       .contact-us-container{
-         padding-top: 0;
          display: flex;
          flex-direction: column;
+         font-size: 1rem;
+         height: 90%;
+         padding-top: 40px;
+      }
+
+      .contact-div{
+         height: 85%;
       }
 
       .contact-div ul{
          align-self: center;
          line-height: normal
       }
+      
+.contact-us-i{
+   padding-bottom: 20px;
+   display:flex;
+   align-items: center;
+   font-size: 30px;
+   }
+   
+.contact-div:hover{
+   transition: all 0.1s ease-in-out;
+   border-radius: 4px;
+   border: 3px solid  var(--primary);
+   box-shadow: 0px 0px 25px 5px rgba(233, 15, 117, 0.747);
+}
 }

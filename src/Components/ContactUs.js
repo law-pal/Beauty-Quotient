@@ -10,26 +10,26 @@ import './ContactUs.css'
                   <div className='contact-us-container'>
                      <div className='contact-div'>
                         <ul>
-                           <li><a href='#'>About</a></li>
-                           <li><a href='#'>Contact</a></li>
-                           <li><a href='#'>Customer Service</a></li>
-                           <li><a href='#'>Careers</a></li>
+                           <li><Link>About</Link></li>
+                           <li><Link>Contact</Link></li>
+                           <li><Link>Customer Service</Link></li>
+                           <li><Link>Careers</Link></li>
                         </ul>
                      </div>   
                      <div className='contact-div'>
                         <ul>
-                           <li><a href='#'>Pivacy Policy</a></li>
-                           <li><a href='#'>Terms of Service</a></li>
-                           <li><a href='#'>Payments</a></li>
-                           <li><a href='#'>Feedback</a></li>
+                           <li><Link>Pivacy Policy</Link></li>
+                           <li><Link>Terms of Service</Link></li>
+                           <li><Link>Payments</Link></li>
+                           <li><Link>Feedback</Link></li>
                         </ul>
                      </div>
                      <div className='contact-div'> 
                         <ul>
-                           <li><a href='#'>Upcoming Products</a></li>
-                           <li><a href='#'>Our History</a></li>
-                           <li><a href='#'>Return Policy</a></li>
-                           <li><a href='#'>Customer Stories</a></li>
+                           <li><Link>Upcoming Products</Link></li>
+                           <li><Link>Our History</Link></li>
+                           <li><Link>Return Policy</Link></li>
+                           <li><Link>Customer Stories</Link></li>
                         </ul>
                      </div>
                   </div>

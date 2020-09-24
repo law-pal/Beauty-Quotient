@@ -16,11 +16,6 @@ class Home extends Component {
     render(){
         return(
             <div className='home'>
-                {/* <div><img src={Mascara}/></div>
-                <div><img src={Blush}/></div>
-                <div><img src={Eyeshadow}/></div> */}
-                                    
-               
                 <div className='home-one'>
                     <img src={Bronzer} text='Hello'/>
                     <h2>Welcome to</h2>
