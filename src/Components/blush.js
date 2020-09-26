@@ -8,7 +8,7 @@ const Blush = (props) => {
                 <div className='parent-container'>
                     <div className='products'>
                         <ul className='product'>
-                                <img src={props.blush.image_link}/>
+                                <img src={props.blush.image_link} alt='cosmetic'/>
                                 <li><h4>{props.blush.brand}</h4></li>
                                 <li>{props.blush.name}</li>
                                 <div className='btn-price'>

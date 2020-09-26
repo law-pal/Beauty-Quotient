@@ -14,7 +14,7 @@ const foundations = items.filter(item => item.id.toString() === id )[0]
       <h1>{foundations.name}</h1>
       <div className='info'>
             <div className='info-img'>
-               <img src={foundations.image_link}/>
+               <img src={foundations.image_link} alt='foundation'/>
             </div>
             <ul className='info-ul'>
                <li><strong>Brand:</strong>{foundations.brand}</li>            

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import './App.css';
 import './Components/Navigation.css'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navigation from './Components/Navigation';
 import Home from './Components/Home'
 import Blushes from './Components/blushes'

@@ -9,7 +9,7 @@ const Mascara = (props) => {
             <div className='parent-container'>
                 < div className='products'>
                     <ul className='product'>
-                            <img src={props.mascara.image_link}/>
+                            <img src={props.mascara.image_link} alt='mascara'/>
                             <li><h4>{props.mascara.brand}</h4></li>
                             <li>{props.mascara.name}</li>
                             <div className='btn-price'>

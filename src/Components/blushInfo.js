@@ -15,7 +15,7 @@ const blush = items.filter(item => item.id.toString() === id )[0]
          <h1>{blush.name}</h1>
          <div className='info'>
                <div className='info-img'>
-                  <img src={blush.image_link}/>
+                  <img src={blush.image_link} alt='blush'/>
                </div>
                <ul className='info-ul'>
                   <li><strong>Brand:</strong>{blush.brand}</li>            

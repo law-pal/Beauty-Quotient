@@ -8,7 +8,7 @@ const Foundation = (props) => {
             <div className='parent-container'>
             <div className='products'>
                 <ul className='product'>
-                        <img src={props.foundation.image_link}/>
+                        <img src={props.foundation.image_link} alt='foundation'/>
                         <li><h4>{props.foundation.brand}</h4></li>
                         <li>{props.foundation.name}</li>
                         <div className='btn-price'>

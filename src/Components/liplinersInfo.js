@@ -14,7 +14,7 @@ const lipliners = items.filter(item => item.id.toString() === id )[0]
       <h1>{lipliners.name}</h1>
       <div className='info'>
             <div className='info-img'>
-               <img src={lipliners.image_link}/>
+               <img src={lipliners.image_link} alt='lipliner'/>
             </div>
             <ul className='info-ul'>
                <li><strong>Brand:</strong>{lipliners.brand}</li>            

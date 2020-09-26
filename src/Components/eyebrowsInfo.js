@@ -14,7 +14,7 @@ const eyebrows = items.filter(item => item.id.toString() === id )[0]
       <h1>{eyebrows.name}</h1>
       <div className='info'>
             <div className='info-img'>
-               <img src={eyebrows.image_link}/>
+               <img src={eyebrows.image_link} alt='eyebrows'/>
             </div>
             <ul className='info-ul'>
                <li><strong>Brand:</strong>{eyebrows.brand}</li>            

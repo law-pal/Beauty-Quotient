@@ -7,7 +7,7 @@ const Bronzer = (props) => {
         <div className='parent-container'>
                     <div className='products'>
                         <ul className='product'>
-                                <img src={props.bronzer.image_link}/>
+                                <img src={props.bronzer.image_link} alt='bronzer'/>
                                 <li><h4>{props.bronzer.brand}</h4></li>
                                 <li>{props.bronzer.name}</li>
                                 <div className='btn-price'>

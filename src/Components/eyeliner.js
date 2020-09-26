@@ -8,7 +8,7 @@ const Eyeliner = (props) => {
             <div className='parent-container'>
             <div className='products'>
                 <ul className='product'>
-                        <img src={props.eyeliner.image_link}/>
+                        <img src={props.eyeliner.image_link} alt='eyeliner'/>
                         <li><h4>{props.eyeliner.brand}</h4></li>
                         <li>{props.eyeliner.name}</li>
                         <div className='btn-price'>

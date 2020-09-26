@@ -171,7 +171,13 @@ a{
 
 .content-wrapper{
    position: relative;
-    
+}
+
+@media screen and (max-width: 725px){
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* Info component styling*/    

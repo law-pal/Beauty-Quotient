@@ -17,15 +17,15 @@ class Home extends Component {
         return(
             <div className='home'>
                 <div className='home-one'>
-                    <img src={Bronzer} text='Hello'/>
+                    <img src={Bronzer} text='Hello' alt='#'/>
                     <h2>Welcome to</h2>
                 </div>
                 <div className='home-two'>
-                    <img src={Blush}/>
+                    <img src={Blush} alt='#'/>
                     <h2>Beauty</h2>
                  </div>
                 <div className='home-two'>
-                    <img src={Eyeshadow}/>
+                    <img src={Eyeshadow} alt='#'/>
                    <h2>Quotient</h2>
                  </div>
             </div>

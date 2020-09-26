@@ -14,7 +14,7 @@ const nailpolishes = items.filter(item => item.id.toString() === id )[0]
       <h1>{nailpolishes.name}</h1>
       <div className='info'>
             <div className='info-img'>
-               <img src={nailpolishes.image_link}/>
+               <img src={nailpolishes.image_link} alt='nail-polish'/>
             </div>
             <ul className='info-ul'>
                <li><strong>Brand:</strong>{nailpolishes.brand}</li>            
