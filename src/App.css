@@ -177,6 +177,7 @@ a{
     .home{
         display: flex;
         flex-direction: column;
+        
     }
 }
 
