@@ -1,4 +1,4 @@
-#This project is my first full-stack application here is the deploy link => https://law-pal.github.io/
+#This project is my first full-stack application here is the deploy link => https://law-pal.github.io/Beauty-Quotient/
 
 
 #Links of my backend deploy in heroku => http://heroku-beauty-quotient.herokuapp.com/beauty_api/v1/users
